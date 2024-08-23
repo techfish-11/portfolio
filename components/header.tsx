@@ -4,11 +4,12 @@ import { SiX, SiDiscord, SiGithub } from "@icons-pack/react-simple-icons"
 
 export default function Header() {
   return (
-    <div className="flex items-center gap-3 h-16 px-4 border m-4 rounded-full shadow-sm">
+    <div className="flex items-center gap-3 h-16 px-4 border m-4 rounded-full shadow-sm" style={{ fontFamily: 'Montserrat' }}>
       <Button variant={"ghost"} className="font-bold text-xl rounded-full" asChild>
         <Link href={"/"} >Techfish</Link>
       </Button>
-      <div>
+      <div className="flex-1"></div>
+      <div className="flex items-center gap-3">
         <Button asChild variant="ghost">
           <Link href="/mypage">About</Link>
         </Button>
@@ -19,7 +20,7 @@ export default function Header() {
           <Link href="/mypage">Link</Link>
         </Button>
       </div>
-      <span className="flex-1"></span>
+      <div className="flex-1"></div>
       <div>
         <Button asChild variant="ghost" size={"icon"}>
             <Link href="https://x.com/11sakana1"><SiX size={18} /></Link>
