@@ -35,7 +35,7 @@ export default function RootLayout({
 	return (
 		<html lang="ja">
 			<body className={cn(
-			  "min-h-dvh bg-gradient-to-br from-blue-900 to-purple-900 font-sans antialiased",
+			  "min-h-dvh bg-gradient-to-br from-[#faaa92] to-[#faaa92] font-sans antialiased",
 			  InterFont.variable
 			)}>
 				<ThemeProvider

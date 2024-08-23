@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Future() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-blue-900 to-purple-900 text-white relative overflow-hidden">
+    <div className="flex flex-col items-center justify-center min-h-screen bg-[#171121] text-white relative overflow-hidden">
       <div className="absolute inset-0 bg-[url('/stars.png')] opacity-50"></div>
       <motion.h1 
         className="text-5xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-blue-300 to-purple-300 mb-4 relative z-10"
