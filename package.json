@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@emotion/react": "^11.13.3",
+    "@emotion/styled": "^11.13.0",
     "@icons-pack/react-simple-icons": "^10.0.0",
+    "@mui/material": "^5.16.7",
     "@phosphor-icons/react": "^2.1.7",
     "@radix-ui/react-slot": "^1.1.0",
     "@react-three/drei": "^9.111.2",

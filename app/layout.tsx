@@ -35,15 +35,20 @@ export default function RootLayout({
 	return (
 		<html lang="ja">
 			<body className={cn(
-			  "min-h-dvh bg-background font-sans antialiased",
+			  "min-h-dvh bg-gradient-to-br from-blue-900 to-purple-900 font-sans antialiased",
 			  InterFont.variable
 			)}>
 				<ThemeProvider
 				attribute="class"
-				defaultTheme="system"
+				defaultTheme="dark"
 				enableSystem
 				disableTransitionOnChange>
-					{children}
+					<div className="relative overflow-hidden">
+						<div className="absolute inset-0 bg-[url('/stars.png')] opacity-50"></div>
+						<div className="relative z-10">
+							{children}
+						</div>
+					</div>
 				</ThemeProvider>
 			</body>
 		</html>

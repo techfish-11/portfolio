@@ -65,5 +65,10 @@
   }
   body {
     @apply bg-background text-foreground;
+    overflow-x: hidden;
+    overflow-y: auto;
+    scroll-behavior: smooth;
+    scroll-snap-type: y mandatory;
+    scroll-snap-destination: 0 50%;
   }
 }
