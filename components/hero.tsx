@@ -7,10 +7,10 @@ export default function Hero() {
     <div className="flex items-start justify-start w-full p-8 bg-white text-gray-600 h-screen relative overflow-hidden">
       {/* 左寄りかつ全体的に上に配置 */}
       <div className="flex flex-col items-start w-1/2 z-10" style={{ marginTop: '100px' }}>
-        <h1 className="text-6xl font-bold bg-gradient-to-r from-gray-500 to-gray-700 text-transparent bg-clip-text">
+        <h1 className="text-6xl font-black bg-gradient-to-r from-gray-500 to-gray-700 text-transparent bg-clip-text" style={{ fontFamily: '"Roboto Condensed", sans-serif', fontWeight: 900 }}>
           I&apos;m techfish,
         </h1>
-        <h1 className="text-4xl font-bold bg-gradient-to-r from-gray-500 to-gray-700 text-transparent bg-clip-text mt-4">
+        <h1 className="text-4xl font-black bg-gradient-to-r from-gray-500 to-gray-700 text-transparent bg-clip-text mt-4" style={{ fontFamily: '"Roboto Condensed", sans-serif', fontWeight: 900 }}>
           Developer
         </h1>
       </div>
