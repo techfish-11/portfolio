@@ -2,19 +2,17 @@ import Image from "next/image";
 import Hero from "@/components/hero";
 import Header from "@/components/header";
 import Footer from "@/components/footer";
-import Future from "@/components/future"; // フューチャーページをインポート
+import Future from "@/components/future";
 
 export default function Home() {
   return (
     <div>
-      {/* こんなかにコンポーネントを置くのが暗黙のルールっていうか基本的な書き方 */}
-      {/* 順番は、ヘッダー、ボディ（ヒーローページ、フューチャーセクション, etc）、フッター */}
-      
       <Header />
-      <Hero />
-      <div style={{ marginTop: '10px' }}>
-        <Future /> {/* フューチャーページを追加 */}
-      </div>
+      <main className="flex flex-col space-y-0" style={{ marginBottom: '-20px' }}>
+        <Hero />
+        <div className="bg-[#f3f4f6] h-16"></div>
+        <Future />
+      </main>
       <Footer />
     </div>
   );

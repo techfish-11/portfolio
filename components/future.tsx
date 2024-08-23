@@ -3,7 +3,7 @@ import { SiPython, SiJavascript, SiTypescript } from '@icons-pack/react-simple-i
 
 export default function Future() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen bg-white">
+    <div className="flex flex-col items-center justify-center h-screen bg-[#f3f4f6]">
       <h1 className="text-4xl font-bold text-gray-800 mb-4">Favorite Languages</h1>
       <p className="text-lg text-gray-600">This is the introduction page for my favorite programming languages.</p>
       <div className="flex flex-wrap justify-center gap-4 mt-8">
