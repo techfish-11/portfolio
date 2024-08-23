@@ -20,7 +20,7 @@ const RotatingText = () => {
   }, []);
 
   return (
-    <div className="h-12 overflow-visible ml-auto text-right">
+    <div className="h-12 overflow-visible">
       <AnimatePresence mode="wait">
         <motion.h2
           key={currentIndex}
@@ -42,7 +42,7 @@ const RotatingText = () => {
 
 export default function Introduction() {
   return (
-    <div className="flex flex-col items-end w-1/2 z-10" style={{ marginTop: '100px' }}>
+    <div className="flex flex-col items-start w-1/2 z-10" style={{ marginTop: '100px' }}>
       <motion.h1 
         initial={{ opacity: 0, x: -50 }}
         animate={{ opacity: 1, x: 0 }}
@@ -59,7 +59,7 @@ export default function Introduction() {
         initial={{ opacity: 0, y: 50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.5, duration: 0.8 }}
-        className="mt-4 text-lg text-gray-300 text-right"
+        className="mt-4 text-lg text-gray-300"
         whileHover={{ scale: 1.05, rotate: 5 }}
         whileTap={{ scale: 0.95 }}
       >

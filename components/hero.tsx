@@ -37,7 +37,7 @@ export default function Hero() {
     <div className="flex items-start justify-start w-full p-8 bg-gradient-to-br from-blue-900 to-purple-900 text-white h-screen relative overflow-hidden text-lg font-bold">
       <StarField />
       {/* Imのやつを設置してるよ */}
-      <div className="flex flex-col items-start w-1/2 z-10" style={{ marginTop: '100px' }}>
+      <div className="flex flex-col items-center w-1/2 z-10" style={{ marginTop: '100px' }}>
         <Im />
       </div>
       {/* 好きなプロジェクトの欄だよ */}

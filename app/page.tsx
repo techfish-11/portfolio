@@ -1,13 +1,11 @@
-"use client"; // クライアントコンポーネントとしてマーク
+"use client";
 import Footer from "@/components/footer";
 import Future from "@/components/future";
 import Hero from "@/components/hero";
 import Header from "@/components/header";
 import MobileHome from "@/components/mobileHome";
 
-// `Home` コンポーネントを修正
 export default function Home() {
-  // モバイル判定はクライアントサイドで行います
   if (typeof window !== 'undefined' && /Mobi|Android/i.test(navigator.userAgent)) {
     return <MobileHome />;
   } else {
